@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --bg-color: #333430;
+    --second-bg-color: #433b37;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #eb5038;
 }
 
 html {
@@ -75,10 +75,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .home-img img {
-    width: 35vw;
+    width: 30vw;
+    gap: 100px;
 }
 
 .home-content h3 {
