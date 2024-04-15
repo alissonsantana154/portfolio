@@ -199,14 +199,15 @@ span {
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
-    width: 70%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     margin-top: 2rem;
 }
 
 .skills .container .row {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.8rem;
 }
 
@@ -473,6 +474,10 @@ span {
         margin-top: 4rem;
     }
 
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .portfolio h2 {
         margin-bottom: 3rem;
     }
@@ -491,6 +496,10 @@ span {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .skills .container .row {
+        grid-template-columns: 1fr;
     }
 
     .contact form .input-box input {
